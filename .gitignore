@@ -21,6 +21,10 @@ node_modules/
 dist/
 *.tsbuildinfo
 
+# Python build artifacts
+__pycache__/
+*.py[cod]
+
 # OS / editor
 .DS_Store
 *.log
