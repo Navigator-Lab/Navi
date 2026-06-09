@@ -1,0 +1,26 @@
+# Secrets & local state — never commit
+.secrets/
+**/.env
+.env.*
+.agent/state/active_project.json
+
+# Internal — NOT for the public OSS repo (the memory SYSTEM ships via .agent/templates/docs/)
+# live project memory: strategy, $9 pricing, OSS→SaaS plan, local paths
+/docs/
+# internal business/strategy briefs (00_..05_, incl .docx)
+/0[0-5]_*
+# P08/P09 — still domain-locked; genericize before shipping in a release
+.agent/protocols/_deferred_domain/
+
+# Backups & archives
+_backup_*/
+.agent/_backup_*/
+
+# Node (future CLI)
+node_modules/
+dist/
+*.tsbuildinfo
+
+# OS / editor
+.DS_Store
+*.log
