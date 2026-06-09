@@ -25,6 +25,9 @@ A routing layer (intent detection + a fixed protocol library + an output contrac
 Navi detects your project, picks the intent (EXPLAIN · RESEARCH · PLAN · BUILD · DEBUG · VERIFY · REVIEW ·
 REFACTOR · OPERATE), selects a tier, loads only the protocols it needs, and saves reports under `docs/reports/`.
 
+New here? Walk through [`QUICKSTART.md`](QUICKSTART.md) (your first 5 minutes), then see real output in
+[`examples/todo-api/`](examples/todo-api/).
+
 ## What's inside
 | Path | What |
 |------|------|
@@ -33,6 +36,7 @@ REFACTOR · OPERATE), selects a tier, loads only the protocols it needs, and sav
 | `.claude/commands/navi.md` | The `/navi` slash command (points at the brain) |
 | `.claude/agents/` | Isolated subagents: `navi-research`, `navi-audit`, `navi-debug` |
 | `.agent/templates/` | `navi.project.md` overlay + `docs/` memory scaffolding |
+| `examples/` | Worked examples — a real project + the report Navi produced on it |
 | `navi.project.md` | This repo's own Project Law |
 
 Run Navi in any project and it scaffolds a living **`docs/` memory** (STATUS · CHANGELOG · TODO · DECISIONS ·
